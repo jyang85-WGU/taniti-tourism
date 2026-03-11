@@ -1,16 +1,88 @@
-<!-- plan-trip.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plan Your Trip - Taniti Tourism</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background:#f5f7fa; color:#222; }
-    header, footer { background:#0b4f6c; color:white; padding:16px; }
-    nav a { color:white; margin-right:16px; text-decoration:none; font-weight:bold; }
-    main { max-width:1000px; margin:30px auto; background:white; padding:30px; border-radius:10px; }
-    ul li { margin:10px 0; }
-    .btn { display:inline-block; padding:12px 18px; background:#0b4f6c; color:white; text-decoration:none; border-radius:6px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header, footer {
+      background: #0b4f6c;
+      color: white;
+      padding: 16px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 220px;
+      background: #dcdcdc;
+      border: 2px dashed #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .cards {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      flex: 1 1 280px;
+      background: #eef3f7;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #0b4f6c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
@@ -20,21 +92,122 @@
       <a href="index.html">Home</a>
       <a href="attractions.html">Attractions</a>
       <a href="lodging.html">Lodging</a>
+      <a href="dining.html">Dining</a>
       <a href="transportation.html">Transportation</a>
       <a href="plan-trip.html">Plan Your Trip</a>
+      <a href="faq.html">FAQ</a>
     </nav>
   </header>
+
   <main>
     <h2>Plan Your Trip</h2>
-    <ul>
-      <li>Choose lodging</li>
-      <li>Review transportation options</li>
-      <li>Browse attractions</li>
-      <li>Read travel tips and visitor information</li>
-      <li>Check dining and local services</li>
-    </ul>
-    <a class="btn" href="index.html">Back to Home</a>
+    <p>
+      Planning a trip to Taniti is easy when you organize your stay around the experiences you want most.
+      Whether you are looking for beaches, sightseeing, local dining, or outdoor adventure, this page helps
+      you prepare a simple and enjoyable visit.
+    </p>
+
+    <img src="plan-trip.jpg" alt="Thinking of planning" style="width:100%; border-radius:10px; margin:20px 0;">
+
+    <div class="section">
+      <h3>Start Planning in 3 Steps</h3>
+      <div class="cards">
+        <div class="card">
+          <h3>1. Choose Your Stay</h3>
+          <p>
+            Decide whether you want a resort, hotel, bed and breakfast, or hostel based on your budget,
+            travel style, and preferred location.
+          </p>
+        </div>
+        <div class="card">
+          <h3>2. Pick Your Activities</h3>
+          <p>
+            Explore beaches, rainforest adventures, volcano tours, sightseeing, fishing trips, and entertainment options.
+          </p>
+        </div>
+        <div class="card">
+          <h3>3. Plan How to Get Around</h3>
+          <p>
+            Review airport access, buses, taxis, rental cars, bike rentals, and walkable areas before you arrive.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Suggested Trip Styles</h3>
+      <div class="cards">
+        <div class="card">
+          <h3>Relaxing Getaway</h3>
+          <p>
+            Stay near Taniti City or Yellow Leaf Bay and spend time enjoying the beaches, local dining, and scenic views.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Adventure-Focused Trip</h3>
+          <p>
+            Plan a visit around rainforest hikes, zip-lining, snorkeling, fishing tours, and volcano sightseeing.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Mixed Experience</h3>
+          <p>
+            Combine sightseeing, cultural attractions, and entertainment with time for relaxation and dining.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Suggested 3-Day Itinerary</h3>
+      <div class="cards">
+        <div class="card">
+          <h3>Day 1</h3>
+          <ul>
+            <li>Arrive on Taniti and check into lodging</li>
+            <li>Explore Taniti City</li>
+            <li>Relax at the beach near Yellow Leaf Bay</li>
+            <li>Enjoy dinner at a local restaurant</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Day 2</h3>
+          <ul>
+            <li>Take a rainforest hike or zip-line adventure</li>
+            <li>Visit local attractions or sightseeing areas</li>
+            <li>Spend the evening in Merriton Landing</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Day 3</h3>
+          <ul>
+            <li>Visit the volcano or take a boat or bus tour</li>
+            <li>Shop or explore local galleries and museums</li>
+            <li>Prepare for departure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Helpful Planning Tips</h3>
+      <ul>
+        <li>Choose lodging based on whether you want walkable access to beaches, attractions, or entertainment.</li>
+        <li>Visitors staying near Merriton Landing can easily explore dining and activities on foot.</li>
+        <li>Travelers interested in outdoor adventure may want to prioritize transportation planning before arrival.</li>
+        <li>Review the FAQ page for island information such as currency, safety, language, and local regulations.</li>
+      </ul>
+    </div>
+
+    <a class="btn" href="lodging.html">View Lodging</a>
+    <a class="btn" href="attractions.html">Explore Attractions</a>
+    <a class="btn" href="transportation.html">Transportation Info</a>
+    <a class="btn" href="faq.html">View FAQ</a>
+
   </main>
-  <footer>Travel Info | Map | Contact</footer>
+
+  <footer>
+    Travel Info | Map | Contact
+  </footer>
 </body>
 </html>

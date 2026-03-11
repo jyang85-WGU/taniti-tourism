@@ -1,16 +1,74 @@
-<!-- transportation.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transportation - Taniti Tourism</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background:#f5f7fa; color:#222; }
-    header, footer { background:#0b4f6c; color:white; padding:16px; }
-    nav a { color:white; margin-right:16px; text-decoration:none; font-weight:bold; }
-    main { max-width:1000px; margin:30px auto; background:white; padding:30px; border-radius:10px; }
-    ul li { margin:10px 0; }
-    .btn { display:inline-block; padding:12px 18px; background:#0b4f6c; color:white; text-decoration:none; border-radius:6px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header, footer {
+      background: #0b4f6c;
+      color: white;
+      padding: 16px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 220px;
+      background: #dcdcdc;
+      border: 2px dashed #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .cards {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      flex: 1 1 280px;
+      background: #eef3f7;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #0b4f6c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -20,22 +78,51 @@
       <a href="index.html">Home</a>
       <a href="attractions.html">Attractions</a>
       <a href="lodging.html">Lodging</a>
+      <a href="dining.html">Dining</a>
       <a href="transportation.html">Transportation</a>
       <a href="plan-trip.html">Plan Your Trip</a>
+      <a href="faq.html">FAQ</a>
     </nav>
   </header>
+
   <main>
     <h2>Transportation</h2>
-    <ul>
-      <li>Public Bus Service</li>
-      <li>Private Buses</li>
-      <li>Taxis</li>
-      <li>Rental Cars</li>
-      <li>Bike Rentals</li>
-      <li>Walkable Areas in Taniti City and Merriton Landing</li>
-    </ul>
+    <p>
+      Most visitors arrive to Taniti by air, though some arrive by cruise ship. Once on the island, travelers have several ways to get around.
+    </p>
+
+    <img src="transportation.jpg" alt="Private bus" style="width:100%; border-radius:10px; margin:20px 0;">
+
+    <div class="cards">
+      <div class="card">
+        <h3>Arriving on the Island</h3>
+        <p>
+          Taniti is served by a small airport that currently accommodates small jets and propeller planes. A small cruise ship also docks in Yellow Leaf Bay one night each week.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Ground Transportation</h3>
+        <p>
+          Public buses serve Taniti City from 5:00 a.m. to 11:00 p.m. daily, while private buses serve other parts of the island.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Other Ways to Travel</h3>
+        <p>
+          Visitors can also use taxis, rental cars near the airport, or rent bikes and helmets from several vendors.
+        </p>
+      </div>
+    </div>
+
+    <p>
+      Taniti City is fairly flat and very walkable. Many tourists also stay near Merriton Landing, which is easy to explore on foot.
+    </p>
+
     <a class="btn" href="index.html">Back to Home</a>
   </main>
-  <footer>Travel Info | Map | Contact</footer>
+
+  <footer>
+    Travel Info | Map | Contact
+  </footer>
 </body>
 </html>

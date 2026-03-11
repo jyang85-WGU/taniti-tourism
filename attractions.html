@@ -1,16 +1,74 @@
-<!-- attractions.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Attractions - Taniti Tourism</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background:#f5f7fa; color:#222; }
-    header, footer { background:#0b4f6c; color:white; padding:16px; }
-    nav a { color:white; margin-right:16px; text-decoration:none; font-weight:bold; }
-    main { max-width:1000px; margin:30px auto; background:white; padding:30px; border-radius:10px; }
-    ul li { margin:10px 0; }
-    .btn { display:inline-block; padding:12px 18px; background:#0b4f6c; color:white; text-decoration:none; border-radius:6px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header, footer {
+      background: #0b4f6c;
+      color: white;
+      padding: 16px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 220px;
+      background: #dcdcdc;
+      border: 2px dashed #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .cards {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      flex: 1 1 280px;
+      background: #eef3f7;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #0b4f6c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -20,21 +78,54 @@
       <a href="index.html">Home</a>
       <a href="attractions.html">Attractions</a>
       <a href="lodging.html">Lodging</a>
+      <a href="dining.html">Dining</a>
       <a href="transportation.html">Transportation</a>
       <a href="plan-trip.html">Plan Your Trip</a>
+      <a href="faq.html">FAQ</a>
     </nav>
   </header>
+
   <main>
-    <h2>Attractions</h2>
-    <ul>
-      <li>Beaches</li>
-      <li>Rainforest Adventures</li>
-      <li>Volcano Tours</li>
-      <li>Fishing Charters</li>
-      <li>Museum and Cultural Sites</li>
-    </ul>
+    <h2>Attractions and Activities</h2>
+    <p>
+      Taniti offers a mix of natural beauty, cultural experiences, and entertainment for all kinds of travelers.
+      Most visitors spend time in Taniti City and around Yellow Leaf Bay, but attractions can be found across the island.
+    </p>
+
+    <img src="beach.jpg" alt="Scenic view of Beach" style="width:100%; border-radius:10px; margin:20px 0;">
+
+    <div class="cards">
+      <div class="card">
+        <h3>Beaches and Sightseeing</h3>
+        <p>
+          Relax on white sandy beaches, explore Taniti City’s native architecture, or take a boat or bus tour around the island.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Rainforest and Volcano</h3>
+        <p>
+          Hike through lush rainforest trails, go zip-lining, or visit Taniti’s small active volcano in the island’s mountainous interior.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Entertainment</h3>
+        <p>
+          Enjoy chartered fishing tours, snorkeling, helicopter rides, an arcade, movie theater, bowling, art galleries, pubs, and a dance club.
+        </p>
+      </div>
+    </div>
+
+    <h3>Merriton Landing</h3>
+    <p>
+      Many activities are located in Merriton Landing, a rapidly developing area on the north side of Yellow Leaf Bay.
+      It is a popular area for tourists who want dining, entertainment, and walkable access to attractions.
+    </p>
+
     <a class="btn" href="index.html">Back to Home</a>
   </main>
-  <footer>Travel Info | Map | Contact</footer>
+
+  <footer>
+    Travel Info | Map | Contact
+  </footer>
 </body>
 </html>
